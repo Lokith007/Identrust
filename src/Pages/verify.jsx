@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
-import { Verification, Credential } from "@/entities/all";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
+import {Credential } from "../Entities/Credentials";
+import { Verification } from "../Entities/Verification";
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+
 import { 
   QrCode, 
   Scan,

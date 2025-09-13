@@ -1,9 +1,12 @@
 
-import React, { useState, useEffect } from "react";
-import { Identity, Credential, Verification } from "@/entities/all";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { useState, useEffect } from "react";
+import React from "react";
+import { Identity } from "../entities/Identies";
+import { Credential } from "../entities/Credentials";
+import {  Verification } from "../entities/Verification";
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Badge } from "../components/ui/badge";
 import { 
   Shield, 
   Wallet, 

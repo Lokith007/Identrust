@@ -1,10 +1,11 @@
 
 import React, { useState, useEffect } from "react";
-import { Credential, Identity } from "@/entities/all";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
+import { Credential} from "../Entities/Credentials";
+import {  Identity } from "../Entities/Identies";
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Badge } from "../components/ui/badge";
+import { Input } from "../components/ui/input";
 import {
   Wallet as WalletIcon, // Renamed to avoid conflict with the component name
   Shield,

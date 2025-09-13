@@ -11,7 +11,7 @@ import {
   SidebarMenuItem,
   SidebarProvider,
   SidebarTrigger,
-} from "./components/ui/sidebar"; // Update this path
+} from "../src/components/ui/sidebar"; // Update this path
 import { cn } from "./lib/utils"; // Update this path
 
 // Example: adjust this utility if you have one already
