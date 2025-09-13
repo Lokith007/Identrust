@@ -1,0 +1,56 @@
+{
+  "name": "Institution",
+  "type": "object",
+  "properties": {
+    "institution_name": {
+      "type": "string",
+      "description": "Name of the institution"
+    },
+    "institution_type": {
+      "type": "string",
+      "enum": [
+        "government",
+        "bank",
+        "university",
+        "hospital",
+        "employer",
+        "certification_body"
+      ],
+      "description": "Type of institution"
+    },
+    "blockchain_address": {
+      "type": "string",
+      "description": "Institution's blockchain address"
+    },
+    "verification_key": {
+      "type": "string",
+      "description": "Public key for verification"
+    },
+    "trust_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 50
+    },
+    "credentials_issued": {
+      "type": "integer",
+      "default": 0
+    },
+    "is_verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "contact_email": {
+      "type": "string",
+      "format": "email"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": [
+    "institution_name",
+    "institution_type"
+  ]
+}

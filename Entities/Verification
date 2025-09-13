@@ -1,0 +1,61 @@
+{
+  "name": "Verification",
+  "type": "object",
+  "properties": {
+    "credential_id": {
+      "type": "string",
+      "description": "ID of verified credential"
+    },
+    "verifier_name": {
+      "type": "string",
+      "description": "Name of verifying party"
+    },
+    "verification_type": {
+      "type": "string",
+      "enum": [
+        "kyc",
+        "age_verification",
+        "qualification_check",
+        "health_status",
+        "voting_eligibility"
+      ],
+      "description": "Type of verification performed"
+    },
+    "verification_result": {
+      "type": "string",
+      "enum": [
+        "verified",
+        "failed",
+        "pending"
+      ],
+      "default": "pending"
+    },
+    "verification_method": {
+      "type": "string",
+      "enum": [
+        "qr_scan",
+        "online_check",
+        "manual_review"
+      ],
+      "description": "Method used for verification"
+    },
+    "location": {
+      "type": "string",
+      "description": "Location where verification took place"
+    },
+    "is_offline": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether verification was done offline"
+    },
+    "verification_metadata": {
+      "type": "object",
+      "description": "Additional verification data"
+    }
+  },
+  "required": [
+    "credential_id",
+    "verifier_name",
+    "verification_type"
+  ]
+}

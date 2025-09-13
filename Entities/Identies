@@ -1,0 +1,48 @@
+{
+  "name": "Identity",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "description": "Full legal name"
+    },
+    "date_of_birth": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of birth"
+    },
+    "nationality": {
+      "type": "string",
+      "description": "Nationality"
+    },
+    "identity_hash": {
+      "type": "string",
+      "description": "Blockchain hash of identity"
+    },
+    "wallet_address": {
+      "type": "string",
+      "description": "Blockchain wallet address"
+    },
+    "backup_phrase": {
+      "type": "string",
+      "description": "Encrypted backup phrase"
+    },
+    "verification_level": {
+      "type": "string",
+      "enum": [
+        "unverified",
+        "basic",
+        "enhanced",
+        "premium"
+      ],
+      "default": "unverified"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "full_name"
+  ]
+}
